@@ -3,35 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <title>Ретро Ігри Онлайн</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
-    <h1>Ретро Ігри Онлайн</h1>
+    <h1 id="main-title">Ретро Ігри Онлайн</h1>
     <nav>
       <a href="#games">Ігри</a> |
-      <a href="#contact">Контакти</a>
+      <a href="#form">Зв'язок</a>
     </nav>
   </header>
 
   <main>
-    <h2 id="games">Найпопулярніші ігри</h2>
+    <section class="card">
+      <h2>Super Mario Bros</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Super_Mario_Bros._box.png" alt="Super Mario Bros" width="150">
+      <p>Культовий платформер, що вийшов у 1985 році на NES. Зробив революцію в жанрі та досі вважається легендою.</p>
+    </section>
 
-    <p>Це мій онлайн-магазин, який спеціалізується на ретро-іграх з 80–90-х років. Ми пропонуємо класичні тайтли для NES, Sega, PS1 та інших платформ.</p>
+    <section class="card">
+      <h2>DOOM</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/en/5/57/Doom_cover_art.jpg" alt="DOOM" width="150">
+      <p>Перший культовий 3D-шутер, що задав темп усьому жанру. Вийшов у 1993 році для MS-DOS.</p>
+    </section>
 
-    <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Super_Mario_Bros._box.png" alt="Super Mario Bros" width="200">
-
-    <table border="1">
-      <tr><th>Назва</th><th>Жанр</th><th>Рік</th></tr>
-      <tr><td>Super Mario Bros</td><td>Платформер</td><td>1985</td></tr>
-      <tr><td>DOOM</td><td>Шутер</td><td>1993</td></tr>
+    <h3>Порівняльна таблиця ігор</h3>
+    <table>
+      <tr>
+        <th>Назва</th>
+        <th>Жанр</th>
+        <th>Рік</th>
+        <th>Платформа</th>
+      </tr>
+      <tr>
+        <td>Super Mario Bros</td>
+        <td>Платформер</td>
+        <td>1985</td>
+        <td>NES</td>
+      </tr>
+      <tr>
+        <td>DOOM</td>
+        <td>Шутер</td>
+        <td>1993</td>
+        <td>MS-DOS</td>
+      </tr>
     </table>
 
     <h3>Переваги нашого магазину</h3>
     <ul>
-      <li>Ретро-ігри з епохи 80-х та 90-х</li>
-      <li>Миттєве завантаження</li>
-      <li>Низькі ціни</li>
+      <li>Оригінальні ROM-файли</li>
+      <li>Моментальна доставка</li>
+      <li>Знижки на класичні тайтли</li>
     </ul>
 
     <h3>Як замовити</h3>
@@ -41,7 +64,7 @@
       <li>Оформи замовлення</li>
     </ol>
 
-    <h3>Зв'язок з нами</h3>
+    <h3 id="form">Зв'язок з нами</h3>
     <form>
       <label>Ім’я: <input type="text" name="name"></label><br>
       <label>Email: <input type="email" name="email"></label><br>
@@ -54,7 +77,7 @@
 
   <footer>
     <p>&copy; 2025 Ретро Ігри Онлайн</p>
-    <a id="contact" href="mailto:support@retro-games.ua">Напиши нам</a>
+    <a href="mailto:support@retro-games.ua">Напиши нам</a>
   </footer>
 
 </body>
