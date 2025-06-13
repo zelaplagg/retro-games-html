@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Звіт до ЛР №3 — Верстка HTML + Flexbox</title>
+  <style>
+    body { font-family: sans-serif; background: #f7f7f7; padding: 20px; line-height: 1.6; }
+    h1, h2 { color: #c0392b; }
+    pre { background: #eee; padding: 10px; overflow-x: auto; white-space: pre-wrap; border-left: 4px solid #c0392b; }
+    img { max-width: 100%; margin: 10px 0; border: 1px solid #ccc; }
+    section { background: white; padding: 20px; margin-bottom: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+  </style>
+</head>
+<body>
+
+  <h1>Звіт до лабораторної роботи №3</h1>
+  <p><strong>Тема:</strong> Верстка HTML-документу. Блокова верстка. Верстка засобами CSS та Flexbox</p>
+  <p><strong>Мета:</strong> Навчитись верстати сторінки з використанням різних типів макетів — табличного, блокового та гнучкого (Flexbox).</p>
+
+  <section>
+    <h2>Посилання на файли</h2>
+    <ul>
+      <li><a href="table-fixed.html">Фіксована таблична верстка</a></li>
+      <li><a href="table-fluid.html">Гумова таблична верстка</a></li>
+      <li><a href="float-fixed.html">Фіксована блокова верстка</a></li>
+      <li><a href="float-fluid.html">Гумова блокова верстка</a></li>
+      <li><a href="flexbox.html">Flexbox верстка</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Скріншоти виконаних сторінок</h2>
+    <p>Flexbox:</p>
+    <img src="screenshots/flexbox.png" alt="Flexbox layout">
+    <p>Таблична верстка (fixed):</p>
+    <img src="screenshots/table-fixed.png" alt="Table fixed">
+    <p>Блокова верстка (float-fluid):</p>
+    <img src="screenshots/float-fluid.png" alt="Float layout">
+  </section>
+
+  <section>
+    <h2>HTML-код (фрагмент Flexbox)</h2>
+    <pre><code>&lt;div class="container"&gt;
+  &lt;div class="item"&gt;Super Mario&lt;/div&gt;
+  &lt;div class="item"&gt;DOOM&lt;/div&gt;
+  &lt;div class="item"&gt;Sonic&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+  </section>
+
+  <section>
+    <h2>CSS-код (фрагмент Flexbox)</h2>
+    <pre><code>.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}</code></pre>
+  </section>
+
+  <section>
+    <h2>Висновки</h2>
+    <p>
+      У цій лабораторній я навчилася верстати сторінки різними способами. Таблична верстка морально застаріла та менш гнучка. 
+      Блокова верстка з float'ами працює краще, але має труднощі з масштабуванням. 
+      Найзручнішою виявилась верстка за допомогою Flexbox — проста, потужна та адаптивна. 
+      Надалі варто використовувати саме Flexbox для побудови сучасних макетів.
+    </p>
+  </section>
+
+</body>
+</html>
